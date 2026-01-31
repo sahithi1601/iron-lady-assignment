@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iron Lady - Enquiry Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>📋 Student Enquiry Management</h2>
+
+<div class="form">
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="email" id="email" placeholder="Email">
+
+    <!-- Program Dropdown -->
+    <select id="program">
+        <option value="">Select Interested Program</option>
+        <option value="Career Guidance Program">Career Guidance Program</option>
+        <option value="Leadership & Skill Development Program">
+            Leadership & Skill Development Program
+        </option>
+        <option value="Women Entrepreneurship Program">
+            Women Entrepreneurship Program
+        </option>
+    </select>
+
+    <button onclick="addEnquiry()">Add Enquiry</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Interested Program</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
